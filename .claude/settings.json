@@ -1,0 +1,21 @@
+{
+  "enabledPlugins": {
+    "meta-wearables-webapp@meta-wearables": true,
+    "meta-wearables-webapp-game@meta-wearables": true,
+    "mwdat-android@mwdat-android-marketplace": true
+  },
+  "extraKnownMarketplaces": {
+    "meta-wearables": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/facebook/meta-wearables-webapp.git"
+      }
+    },
+    "mwdat-android-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "facebook/meta-wearables-dat-android"
+      }
+    }
+  }
+}
