@@ -10,6 +10,7 @@ Reference notes: [docs/meta-wearables/](docs/meta-wearables/README.md). Org onbo
 - [x] General plugins (project scope): `typescript-lsp` (+ global typescript-language-server), `context7`,
       `frontend-design`, `modern-web-guidance`, `chrome-devtools-mcp`, `vercel`, `feature-dev`, `code-simplifier`.
       Who owns what is in [CLAUDE.md](CLAUDE.md).
+- [x] UI design skills (project scope): `impeccable` 4.6.0 (pbakaus; auto-hook turned off here) and `taste-skill` 2.0.0 (Leonxlnx)
 - [x] UI Toolkit LLM skills (24) installed at account scope in `~/.claude/skills/`
 - [x] Tooling: Node 24.13 / npm 11.6, git 2.52, Chrome, VS Code, GitHub CLI (signed in), ImageMagick 7.1.2
 - [x] Git repo initialized with a `.gitignore` that keeps secrets out.

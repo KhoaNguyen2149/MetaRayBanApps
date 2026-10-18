@@ -10,7 +10,9 @@
     "chrome-devtools-mcp@claude-plugins-official": true,
     "vercel@claude-plugins-official": true,
     "feature-dev@claude-plugins-official": true,
-    "code-simplifier@claude-plugins-official": true
+    "code-simplifier@claude-plugins-official": true,
+    "impeccable@impeccable": true,
+    "taste-skill@taste-skill": true
   },
   "extraKnownMarketplaces": {
     "meta-wearables": {
@@ -23,6 +25,18 @@
       "source": {
         "source": "github",
         "repo": "facebook/meta-wearables-dat-android"
+      }
+    },
+    "impeccable": {
+      "source": {
+        "source": "github",
+        "repo": "pbakaus/impeccable"
+      }
+    },
+    "taste-skill": {
+      "source": {
+        "source": "github",
+        "repo": "Leonxlnx/taste-skill"
       }
     }
   }

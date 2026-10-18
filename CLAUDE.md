@@ -12,7 +12,15 @@ Games: Vite + TypeScript + Three.js (`meta-wearables-webapp-game`). Native (late
 - **Glasses app UI (inside an app folder):** the `meta-wearables-webapp` skills and the UI Toolkit skills
   (`wearables-ui-toolkit-web` → its production patterns) are authoritative. Do not apply `frontend-design` or other
   generic design guidance there: no custom styling of toolkit components, no literal colors, sizes or fonts, tokens only.
-- **Companion pages** (landing page, install/QR page, KUAL Studios site): use `frontend-design` and `modern-web-guidance`.
+- **Companion pages** (landing page, install/QR page, KUAL Studios site; put them under `sites/`): use
+  `taste-skill` for art direction first, then `impeccable` (`/impeccable critique`, `audit`, `polish`) to refine,
+  plus `frontend-design` and `modern-web-guidance`. Impeccable's auto-detector hook is **off** for this repo
+  (`.impeccable/config.json`) because it would fight the toolkit in glasses apps. Run `/impeccable audit <path>`
+  by hand on companion pages, or turn the hook back on in a separate site repo.
+- **Glasses games** (`meta-wearables-webapp-game`): the game framework owns its own rendering, so `taste-skill`
+  art direction (palette, mood, HUD look) is welcome. Keep to the game plugin's display, performance and validation rules.
+- **Glasses app review:** `/impeccable critique` may be used for read-only feedback on hierarchy and copy.
+  Apply its suggestions only where the UI Toolkit allows them.
 - **Docs lookups:** Meta APIs → Wearables MCP (`search_webapps_docs`, `search_dat_docs`); React, Vite,
   React Router or Three.js versions → `context7`.
 - **Performance:** `ai-glasses-webapp-optimize-performance` first; `chrome-devtools-mcp` for traces and LCP/memory debugging.
