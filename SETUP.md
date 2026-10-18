@@ -7,6 +7,10 @@ Reference notes: [docs/meta-wearables/](docs/meta-wearables/README.md). Org onbo
 ## Done (by Claude, 2026-10-18)
 - [x] Wearables MCP connected for this project (`.mcp.json`; `search_dat_docs` / `search_webapps_docs` work)
 - [x] Plugins installed (project scope): `meta-wearables-webapp` 128.1.0, `meta-wearables-webapp-game` 1.0.1, `mwdat-android` 1.0.1
+- [x] General plugins (project scope): `typescript-lsp` (+ global typescript-language-server), `context7`,
+      `frontend-design`, `modern-web-guidance`, `chrome-devtools-mcp`, `vercel`, `feature-dev`, `code-simplifier`.
+      Who owns what is in [CLAUDE.md](CLAUDE.md).
+- [x] UI Toolkit LLM skills (24) installed at account scope in `~/.claude/skills/`
 - [x] Tooling: Node 24.13 / npm 11.6, git 2.52, Chrome, VS Code, GitHub CLI (signed in), ImageMagick 7.1.2
 - [x] Git repo initialized with a `.gitignore` that keeps secrets out.
 
