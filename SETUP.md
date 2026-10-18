@@ -42,7 +42,13 @@ Reference notes: [docs/meta-wearables/](docs/meta-wearables/README.md). Org onbo
 8. [ ] Meta AI app ≥ v272, glasses firmware ≥ v125, Developer Mode (Settings > App Info → tap App version 5×).
        Then scan the app's QR code to test on the real display.
 
-## First app: `recipe-steps/` (built 2026-10-18)
+## First app: `recipe-steps/` (built and published 2026-10-18)
+- **Live:** https://recipe-steps.vercel.app (Vercel project `recipe-steps`, team `kual-studios`).
+  Add-to-glasses QR: `recipe-steps/qr-publish.png`
+  (deep link `fb-viewapp://web_app_deep_link?appName=recipe-steps&appUrl=https%3A%2F%2Frecipe-steps.vercel.app`).
+- Redeploy: `cd recipe-steps && vercel --prod --yes`. The same URL keeps working for existing installs.
+  Meta's `publish-to-vercel.mjs` crashes on Windows (`spawnSync vercel ENOENT`), so run its steps by hand.
+- Performance baseline: [recipe-steps/PERF.md](recipe-steps/PERF.md). The first load (~5.5 s) misses Meta's targets; optimization is a to-do.
 - Recipes list → Cooking screen with **Next step / Finish / Start over**. Progress is saved per recipe in localStorage.
 - Built on Meta's routed-list pattern. `verify-app` and the `check-webapp` quality gate both pass
   (~187 KB gzipped, 5 requests, no console errors).
