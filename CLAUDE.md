@@ -23,7 +23,17 @@ Games: Vite + TypeScript + Three.js (`meta-wearables-webapp-game`). Native (late
   Apply its suggestions only where the UI Toolkit allows them.
 - **Docs lookups:** Meta APIs → Wearables MCP (`search_webapps_docs`, `search_dat_docs`); React, Vite,
   React Router or Three.js versions → `context7`.
-- **Performance:** `ai-glasses-webapp-optimize-performance` first; `chrome-devtools-mcp` for traces and LCP/memory debugging.
+- **Performance:** `ai-glasses-webapp-optimize-performance` first; `chrome-devtools-mcp` for traces and LCP/memory debugging;
+  `web-quality-skills` (Addy Osmani: performance, core-web-vitals, accessibility, seo, best-practices) for Lighthouse-style
+  audits of companion pages, plus perf and a11y review of glasses apps, alongside Meta's gate (never instead of it).
+- **React code structure:** `vercel-composition-patterns` and `vercel:react-best-practices` for component architecture
+  and rendering performance in any app. They cover code structure only; they never override toolkit styling or layout rules.
+- **Design references for companion pages:** `ui-ux-pro-max` (searchable styles, palettes, font pairings) and
+  `web-design-guidelines` (Vercel's 100+ rule UI audit; fetches its rules from GitHub when run). Same scope as
+  `taste-skill` / `impeccable` below.
+- **Three.js (glasses games):** the `threejs-*` skills in `.claude/skills/` are API reference (geometry, materials,
+  lighting, shaders, post-processing). The game plugin's framework, 30 Hz / 600 × 600 additive-display budgets and
+  `validate-webapp-game` still win. Skip heavy post-processing and shadows unless measured on the display budget.
 - **Publishing:** `ai-glasses-webapp-publish` / the `vercel` plugin, only when the user asks to go public.
 
 ## Workflow

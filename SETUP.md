@@ -11,15 +11,36 @@ Reference notes: [docs/meta-wearables/](docs/meta-wearables/README.md). Org onbo
       `frontend-design`, `modern-web-guidance`, `chrome-devtools-mcp`, `vercel`, `feature-dev`, `code-simplifier`.
       Who owns what is in [CLAUDE.md](CLAUDE.md).
 - [x] UI design skills (project scope): `impeccable` 4.6.0 (pbakaus; auto-hook turned off here) and `taste-skill` 2.0.0 (Leonxlnx)
+- [x] Popular GitHub skills (project scope): `web-quality-skills` (addyosmani), `ui-ux-pro-max` (nextlevelbuilder),
+      `web-design-guidelines` + `vercel-composition-patterns` (vercel-labs, via `npx skills`), 10 `threejs-*` skills
+      (cloudai-x). All checked: Markdown only, no hooks. Pinned in `skills-lock.json`.
 - [x] UI Toolkit LLM skills (24) installed at account scope in `~/.claude/skills/`
-- [x] Tooling: Node 24.13 / npm 11.6, git 2.52, Chrome, VS Code, GitHub CLI (signed in), ImageMagick 7.1.2
-- [x] Git repo initialized with a `.gitignore` that keeps secrets out.
+- [x] Tooling: Node 24.13 / npm 11.6, git 2.52, Chrome, VS Code, GitHub CLI (signed in), ImageMagick 7.1.2,
+      Playwright Chromium
+- [x] Git repo, private GitHub remote: https://github.com/KhoaNguyen2149/MetaRayBanApps
 
-## You need to do these
-1. [x] **Finish Developer Center sign-up** (freelancer, your legal name, United States). Done 2026-10-18.
-2. [x] **Install the "Meta Ray-Ban Display Simulator"** Chrome extension (done 2026-10-18):
-       https://chromewebstore.google.com/detail/meta-ray-ban-display-simu/jpjlmmodokemlepklkdbimceggpbjcll
-3. [ ] Skip for now (needs glasses): Meta AI app version, glasses firmware, Developer Mode.
+## Your to-do list
+### Now (about 10 minutes)
+1. [x] Developer Center sign-up (freelancer, legal name, United States).
+2. [x] "Meta Ray-Ban Display Simulator" Chrome extension.
+3. [ ] **Start a new Claude Code session in this folder.** Plugins and skills only load at session start.
+4. [ ] **Sign in to two plugins:** open an interactive `claude` terminal in this folder, run `/mcp`, and authenticate
+       **context7** (free account, live library docs) and **vercel** (free Hobby account, needed later to publish).
+       Until then those two stay offline, and everything else works.
+5. [ ] *Optional:* add the claude.ai directory plugins suggested in chat (Design, VectorLab UI/UX, A11y Enforcer).
+
+### When you want the app public (so anyone with Display glasses can install it)
+6. [ ] Have a Vercel account (step 4), then ask Claude to "publish recipe-steps". The `ai-glasses-webapp-publish` skill
+       deploys it and makes the add-to-glasses QR code.
+
+### When you start a native Android (DAT) app
+7. [ ] Get an Android 10+ phone and the Meta AI app. Ask Claude to install Android Studio (winget) and add the
+       `chrisbanes/skills` Kotlin/Compose plugin. Then create the project in the Developer Center
+       (package name, icon ≤ 200 × 200, permission justifications).
+
+### When you buy glasses
+8. [ ] Meta AI app ≥ v272, glasses firmware ≥ v125, Developer Mode (Settings > App Info → tap App version 5×).
+       Then scan the app's QR code to test on the real display.
 
 ## First app: `recipe-steps/` (built 2026-10-18)
 - Recipes list → Cooking screen with **Next step / Finish / Start over**. Progress is saved per recipe in localStorage.
